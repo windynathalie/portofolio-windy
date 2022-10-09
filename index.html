@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Windy</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navigation-bar">
+        <div class="container1">
+          <div class="left-side">
+            <img class="picture" src="image/Profile-Picture.png" alt="logo" />
+            <img class="name" src="image/header name.png" alt="name" />
+          </div>
+
+          <div class="right-side" id="links">
+            <ul>
+              <li><a href="#home" onclick="myFunction1()">Home</a></li>
+              <li><a href="#about" onclick="myFunction1()">About</a></li>
+              <li><a href="#interest" onclick="myFunction1()">Interest</a></li>
+              <li>
+                <a href="#experience" onclick="myFunction1()">Experience</a>
+              </li>
+              <li><a href="#contact" onclick="myFunction1()">Contact</a></li>
+            </ul>
+          </div>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cta" id="home">
+        <div class="container call-to-action">
+          <div class="description">
+            <p>Hello, I'm Windy Nathalie Ong</p>
+            <h1>
+              Illustration and <br />
+              Web Design Enthusiast
+            </h1>
+            <button>
+              <a href="#">Hire me!</a>
+            </button>
+          </div>
+
+          <div class="image-description">
+            <img src="image/Group 1.png" alt="vector-play-laptop" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section" id="about">
+        <div class="card">
+          <div class="about">
+            <h2>About Me!</h2>
+            <hr />
+            <p>
+              Hello, I'm Windy Nathalie Ong! I'm Fresh Graduate! I have an
+              enthusiasm in Illustration and web design. Currently, I'm
+              available to work in commission. Need creative design? I can help
+              you!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="interest-section" id="interest">
+        <div class="container-interest">
+          <div class="title">
+            <h2>Interest</h2>
+            <hr />
+          </div>
+          <div class="interest-list">
+            <div class="left">
+              <img src="image/illust.png" alt="Illustration" />
+              <p>Illustration</p>
+            </div>
+            <div class="middle">
+              <img src="image/code.png" alt="coding" />
+              <p>Coding</p>
+            </div>
+            <div class="right">
+              <img src="image/write.png" alt="write" />
+              <p>Writing</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience-section" id="experience">
+        <div class="container-experiencee">
+          <div class="title">
+            <h2>Experience</h2>
+            <hr />
+          </div>
+          <div class="slides-content slides-display-container">
+            <div class="mySlides fade">
+              <a
+                href="https://drive.google.com/drive/folders/1HwKcrouGv0Ze6UVpgm83Dn515L20iT5K?usp=sharing"
+              >
+                <img src="image/experience-2.png" style="width: 100%" />
+                <div class="text">
+                  <p>Children Illustration</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="mySlides fade">
+              <a
+                href="https://drive.google.com/drive/folders/1TBS9Q5WKONBX5ZFU28omkosf-o44CoyL?usp=sharing"
+              >
+                <img src="image/experience-1.png" style="width: 100%" />
+                <div class="text">
+                  <p>Writing</p>
+                </div>
+              </a>
+            </div>
+
+            <div class="mySlides fade">
+              <a href="https://github.com/windynathalie/invoice-mybunayya">
+                <img src="image/experience-3.png" style="width: 100%" />
+                <div class="text">
+                  <p>Invoice and Content Planning</p>
+                </div>
+              </a>
+            </div>
+
+            <button
+              class="slides-button slides-black slides-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="slides-button slides-black slides-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="container-contact">
+          <div class="top-side">
+            <div class="get-in-touch">
+              <h2>Get in touch!</h2>
+              <div class="information">
+                <div class="name">
+                  <img src="image/name.png" alt="name" />
+                  <p>Windy Nathalie Ong</p>
+                </div>
+                <div class="email">
+                  <img src="image/email.png" alt="email" />
+                  <a href="mailto: windy.nathalie@gmail.com"
+                    >windy.nathalie@gmail.com</a
+                  >
+                </div>
+                <div class="location">
+                  <img src="image/location.png" alt="location" />
+                  <p>Makassar, Indonesia</p>
+                </div>
+              </div>
+            </div>
+            <div class="feedback">
+              <h3>Send me a feedback!</h3>
+              <textarea
+                id="myInput"
+                rows="5"
+                cols="50"
+                name="feedback"
+                placeholder="Write here . . ."
+              ></textarea>
+              <button onclick="myInput()">Send!</button>
+            </div>
+          </div>
+          <div class="bottom-side">
+            <h3>Connect with me!</h3>
+            <div class="social-media">
+              <a href="https://www.facebook.com/windy.nathalie/"
+                ><img src="image/facebook.png" alt="facebook-logo"
+              /></a>
+              <a href="https://www.instagram.com/windynathalie__/"
+                ><img src="image/instagram.png" alt="instagram-logo"
+              /></a>
+              <a href="https://twitter.com/WindyNathalie_"
+                ><img src="image/twitter.png" alt="twitter-logo"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container2">
+        <p>Created by: Windy Nathalie Ong | © 2022 All Right Reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      let w = window.innerWidth;
+      function myFunction() {
+        let x = document.getElementById("links");
+        if (w < 768) {
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        } else if (w > 768) {
+          if (x.style.display === "block" || x.style.display === "none") {
+            x.style.display = "inline";
+          }
+        }
+      }
+
+      function myFunction1() {
+        let x = document.getElementById("links");
+        if (w < 768) {
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      }
+
+      function myInput() {
+        let x = document.getElementById("myInput");
+        x.value = " ";
+        alert("Thank you for the Feedback. Have a nice day!");
+      }
+
+      let slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+        showDivs((slideIndex += n));
+      }
+
+      function showDivs(n) {
+        let i;
+        let x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        x[slideIndex - 1].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
