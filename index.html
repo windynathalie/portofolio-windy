@@ -19,28 +19,35 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navigation-bar">
-        <div class="container1">
+    <header class="header">
+      <nav class="navbar">
+        <a href="#contact" class="nav-logo">
           <div class="left-side">
             <img class="picture" src="image/Profile-Picture.png" alt="logo" />
             <img class="name" src="image/header name.png" alt="name" />
           </div>
-
-          <div class="right-side" id="links">
-            <ul>
-              <li><a href="#home" onclick="myFunction1()">Home</a></li>
-              <li><a href="#about" onclick="myFunction1()">About</a></li>
-              <li><a href="#interest" onclick="myFunction1()">Interest</a></li>
-              <li>
-                <a href="#experience" onclick="myFunction1()">Experience</a>
-              </li>
-              <li><a href="#contact" onclick="myFunction1()">Contact</a></li>
-            </ul>
-          </div>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
+        </a>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#interest" class="nav-link">Interest</a>
+          </li>
+          <li class="nav-item">
+            <a href="#experience" class="nav-link">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
       </nav>
     </header>
@@ -55,7 +62,7 @@
               Web Design Enthusiast
             </h1>
             <button>
-              <a href="mailto: windy.nathalie@gmail.com">Hire me!</a>
+              <a href="mailto: windy.nathalie@gmail.com" id="about">Hire me!</a>
             </button>
           </div>
 
@@ -65,7 +72,7 @@
         </div>
       </section>
 
-      <section class="about-section" id="about">
+      <section class="about-section" id="interest">
         <div class="card">
           <div class="about">
             <h2>About Me!</h2>
@@ -80,7 +87,7 @@
         </div>
       </section>
 
-      <section class="interest-section" id="interest">
+      <section class="interest-section">
         <div class="container-interest">
           <div class="title">
             <h2>Interest</h2>
@@ -216,31 +223,23 @@
     </footer>
 
     <script>
-      let w = window.innerWidth;
-      function myFunction() {
-        let x = document.getElementById("links");
-        if (w < 768) {
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        } else if (w > 768) {
-          if (x.style.display === "block" || x.style.display === "none") {
-            x.style.display = "inline";
-          }
-        }
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
       }
 
-      function myFunction1() {
-        let x = document.getElementById("links");
-        if (w < 768) {
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
+      const navLink = document.querySelectorAll(".nav-link");
+
+      navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+      function closeMenu() {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
       }
 
       function myInput() {
