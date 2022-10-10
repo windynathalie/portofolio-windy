@@ -14,14 +14,6 @@ a {
   text-decoration: none;
 }
 
-.header {
-  border-bottom: 1px solid #e2e8f0;
-  background-color: #3f244d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -30,9 +22,7 @@ a {
   background-color: #3f244d;
   width: 100%;
   position: fixed;
-  top: 0;
   z-index: 100;
-  margin: 0 auto;
 }
 
 .hamburger {
@@ -44,8 +34,6 @@ a {
   width: 25px;
   height: 3px;
   margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
   background-color: white;
 }
 
@@ -56,12 +44,11 @@ a {
 }
 
 .nav-item {
-  margin-left: 5rem;
+  margin-left: 80px;
 }
 
 .nav-link {
   font-size: 16px;
-  font-weight: 400;
   color: white;
 }
 
@@ -87,7 +74,6 @@ a {
 .container2 {
   display: flex;
   justify-content: center;
-  columns: 2;
   width: 90%;
   max-width: 900px;
   margin: 0 auto;
@@ -96,12 +82,8 @@ a {
 .cta {
   background-color: #3f244d;
   color: white;
-  padding-bottom: 150px;
-  padding-top: 100px;
-}
-
-.call-to-action {
-  padding: 5px 0;
+  padding-bottom: 155px;
+  padding-top: 105px;
 }
 
 .image-description img {
@@ -199,11 +181,11 @@ hr {
   width: 20%;
   margin-top: 7px;
   border-color: white;
+  margin-bottom: 20px;
 }
 
 .container-interest,
 .container-experiencee {
-  width: 90%;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -238,7 +220,6 @@ hr {
 }
 
 .container-contact {
-  width: 90%;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
@@ -279,10 +260,6 @@ textarea {
   margin-bottom: 10px;
 }
 
-.information {
-  display: block;
-}
-
 .name,
 .location,
 .email {
@@ -296,8 +273,6 @@ textarea {
 .location img,
 .email img {
   height: 30px;
-  display: flex;
-  justify-content: left;
 }
 
 .email img {
@@ -307,7 +282,6 @@ textarea {
 .name p,
 .location p,
 .email a {
-  margin-left: 10px;
   color: white;
   text-decoration: none;
   margin: 0;
@@ -332,29 +306,17 @@ textarea {
   padding: 10px 0;
 }
 
-.mySlides {
-  display: none;
-}
-
 .slides-button {
   border: none;
-  display: inline-block;
   padding: 8px 16px;
-  vertical-align: middle;
-  overflow: hidden;
-  text-decoration: none;
-  color: inherit;
-  background-color: inherit;
-  text-align: center;
   cursor: pointer;
-  white-space: nowrap;
 }
 
 .slides-content {
   margin-left: auto;
   margin-right: auto;
   max-width: 980px;
-  padding-top: 50px;
+  padding-top: 25px;
 }
 
 .slides-display-container:hover .slides-display-hover {
@@ -376,14 +338,14 @@ textarea {
 
 .slides-display-left {
   position: absolute;
-  top: 50%;
+  top: 51%;
   left: 0%;
   transform: translate(0%, -50%);
 }
 
 .slides-display-right {
   position: absolute;
-  top: 50%;
+  top: 51%;
   right: 0%;
   transform: translate(0%, -50%);
 }
