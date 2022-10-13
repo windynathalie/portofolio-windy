@@ -202,13 +202,29 @@
             <h3>Connect with me!</h3>
             <div class="social-media">
               <a href="https://www.facebook.com/windy.nathalie/"
-                ><img src="image/facebook.png" alt="facebook-logo"
-              /></a>
+                ><img
+                  class="facebook"
+                  src="image/facebook.png"
+                  alt="facebook-logo"
+                  onmouseover="hover(this);"
+                  onmouseout="unhover(this);"
+                />
+              </a>
               <a href="https://www.instagram.com/windynathalie__/"
-                ><img src="image/instagram.png" alt="instagram-logo"
+                ><img
+                  class="instagram"
+                  src="image/instagram.png"
+                  alt="instagram-logo"
+                  onmouseover="hover(this);"
+                  onmouseout="unhover(this);"
               /></a>
               <a href="https://twitter.com/WindyNathalie_"
-                ><img src="image/twitter.png" alt="twitter-logo"
+                ><img
+                  class="twitter"
+                  src="image/twitter.png"
+                  alt="twitter-logo"
+                  onmouseover="hover(this);"
+                  onmouseout="unhover(this);"
               /></a>
             </div>
           </div>
@@ -268,6 +284,14 @@
           x[i].style.display = "none";
         }
         x[slideIndex - 1].style.display = "block";
+      }
+
+      function hover(element) {
+        element.setAttribute("src", `image/${element.className}-white.png`);
+      }
+
+      function unhover(element) {
+        element.setAttribute("src", `image/${element.className}.png`);
       }
     </script>
   </body>

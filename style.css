@@ -68,6 +68,11 @@ a {
 .left-side {
   display: flex;
   align-items: center;
+  transition: transform 1.5s;
+}
+
+.left-side:hover {
+  transform: scale(1.05);
 }
 
 .container,
@@ -113,6 +118,54 @@ a {
 .description button a {
   color: white;
   text-decoration: none;
+}
+
+.description p {
+  overflow: hidden;
+  border-right: 3px solid #fda50e;
+  white-space: nowrap;
+  letter-spacing: 2px;
+  animation: typing 5s steps(100, end) infinite,
+    blink-caret 0.75s step-end infinite;
+}
+
+.image-description {
+  transition: transform 1.5s;
+}
+
+.image-description:hover {
+  transform: scale(1.1);
+}
+
+.description h1 {
+  line-height: 35px;
+  color: #0000;
+  text-shadow: 0 0 white, 0 8em #1095c1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.description h1:hover {
+  text-shadow: 0 -10em #3f244d, 0 0 #fda50e;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
 }
 
 .about-section {
@@ -207,6 +260,13 @@ hr {
   margin-right: auto;
   margin-left: auto;
   margin-top: 25px;
+  transition: transform 0.5s;
+}
+
+.left:hover,
+.middle:hover,
+.right:hover {
+  transform: scale(1.1);
 }
 
 .interest-list p {
@@ -260,16 +320,23 @@ textarea {
   margin-bottom: 10px;
 }
 
-.name,
+.information .name,
 .location,
 .email {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 10px 0px;
+  transition: transform 0.5s;
 }
 
-.name img,
+.information .name:hover,
+.location:hover,
+.email:hover {
+  transform: scale(1.1);
+}
+
+.information .name img,
 .location img,
 .email img {
   height: 30px;
@@ -460,8 +527,8 @@ textarea {
   }
 
   .image-description img {
-    padding-top: 50px;
-    padding-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 35px;
   }
 
   .card {
@@ -485,6 +552,12 @@ textarea {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .left,
+  .right,
+  .middle {
+    margin-bottom: 50px;
   }
 
   .top-side {
